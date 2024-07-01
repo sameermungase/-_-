@@ -7,11 +7,11 @@ public class gradeTracker {
 
         Scanner scanner = new Scanner(System.in);
 
-        ArrayList<Double> grades = new ArrayList<>();
-
         System.out.println("Enter the number of students:");
         int numStudents = scanner.nextInt();
 
+        ArrayList<Double> grades = new ArrayList<>();
+        
         for (int i = 0; i < numStudents; i++) {
             System.out.println("Enter the grades for student " + (i + 1) + ":");
             double grade = scanner.nextDouble();
