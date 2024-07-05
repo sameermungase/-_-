@@ -54,7 +54,7 @@ public class HotelManagementSystem {
                     }
                     break;
                 case 4:
-                    System.out.println("Exiting the program. Thank you!");
+                    System.out.println("Exiting the system. Thank you!");
                     System.exit(0);
                 default:
                     System.out.println("Invalid choice. Please try again.");

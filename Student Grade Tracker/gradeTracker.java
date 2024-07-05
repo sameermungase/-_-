@@ -11,7 +11,7 @@ public class gradeTracker {
         ArrayList<Double> marks = new ArrayList<>();
         int numSub = scanner.nextInt();
         for (int i = 0; i < numSub; i++) {
-            System.out.println("Enter the grades for student in subject " + (i + 1) + ":");
+            System.out.print("Enter the grades for student in subject " + (i + 1) + ": ");
             double markspersub = scanner.nextDouble();
             marks.add(markspersub);
         }
@@ -31,6 +31,10 @@ public class gradeTracker {
         }
         String grade = "";
         int percentage = 0; 
+
+        double average = sum / marks.size();
+         percentage =(int)average  ;
+
         if (percentage >=90){
             grade ="A+";
         }else if (percentage >=80) {
@@ -43,8 +47,6 @@ public class gradeTracker {
             grade = "F";
         }
 
-        double average = sum / marks.size();
-         percentage =(int)average  ;
         System.out.println("Average grade: " + average);
         System.out.println("Highest grade: " + highest);
         System.out.println("Lowest grade: " + lowest);
